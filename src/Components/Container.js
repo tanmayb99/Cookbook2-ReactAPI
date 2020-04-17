@@ -37,6 +37,16 @@ export default function Container() {
           </div>
         </div>
         <main>
+          <div>
+            <div className="container">
+              <h3>
+                {" "}
+                Click the button to have a look on your favorite recipes{" "}
+              </h3>
+              <Recipes />
+            </div>
+          </div>
+          {/*
           <div className="content">
             <h2>
               Off-screen navigation using <span>:focus-within</span>
@@ -50,13 +60,9 @@ export default function Container() {
               <strong>NB!</strong> Use a browser that supports :focus-within
             </small>
           </div>
+          */}
         </main>
       </div>
-      <div className="container">
-        <h1> Click the button to have a look on your favorite recipes </h1>
-        <Recipes />
-      </div>
-      hello
     </div>
   );
 }

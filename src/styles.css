@@ -1,25 +1,31 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: #e1e3e6;
 }
 
+/*
 .card {
   width: 18rem;
   border-radius: 10%;
   padding: 10px;
 }
+*/
 
+/*
 .card ul {
   text-align: left;
 }
+*/
 
+/*
 .card img {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 10px;
 }
+*/
 
+/*
 .cards-wrapper {
   text-align: center;
   display: flex;
@@ -29,14 +35,14 @@
   padding: 30px;
   background-color: #b4bdca;
 }
+*/
 
 .container {
   background-image: url("/public/media/background");
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px;
+  padding: 10px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600");
@@ -73,7 +79,7 @@ header {
 
 main {
   background-image: URL("/public/media/background.png");
-  background-color: #a80e0e;
+  background-color: #ffffff;
   padding: 70px 20px 0;
   display: flex;
   flex-direction: column;
@@ -288,12 +294,15 @@ img {
 }
 */
 
+/*
 #div-table {
   border: 1px hidden black;
   padding: 10px;
   margin: 10px;
 }
+*/
 
+/*
 #div-instructions {
   border: 1px hidden black;
   display: flex;
@@ -301,6 +310,7 @@ img {
   padding: 10px;
   margin: 10px;
 }
+*/
 
 /*
 .recipe {
