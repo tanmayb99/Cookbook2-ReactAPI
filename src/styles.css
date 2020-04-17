@@ -78,7 +78,7 @@ header {
 }
 
 main {
-  background-image: URL("/public/media/background.png");
+  background-image: URL("/media/food_background.jpeg");
   background-color: #ffffff;
   padding: 70px 20px 0;
   display: flex;

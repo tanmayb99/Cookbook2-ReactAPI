@@ -7,15 +7,15 @@ export default function Container() {
     <div>
       hello
       <div className="page">
-        <header tabindex="0">Your Cookbook</header>
+        <header tabIndex="0">Your Cookbook</header>
         <div id="nav-container">
           <div className="bg" />
-          <div className="button" tabindex="0">
+          <div className="button" tabIndex="0">
             <span className="icon-bar" />
             <span className="icon-bar" />
             <span className="icon-bar" />
           </div>
-          <div id="nav-content" tabindex="0">
+          <div id="nav-content" tabIndex="0">
             <ul>
               <li>
                 <a href="#">Home</a>
