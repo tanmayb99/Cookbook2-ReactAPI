@@ -1,6 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { myRecipes } from "../data";
 import "../styles.css";
 
+export default function Recipes() {
+  const [recipes, setRecipes] = useState("");
+
+  return (
+    <div>
+      <div>
+        <button
+          onClick={() => {
+            setRecipes(myRecipes);
+          }}
+        >
+          Click Me
+        </button>
+      </div>
+      <div>
+        {recipes &&
+          recipes.map((recipe, index) => {
+            return (
+              <div>
+                {recipe.index}
+                {recipe.recipeName}
+              </div>
+            );
+          })}
+      </div>
+    </div>
+  );
+}
+
+// Cards Recipes from API
+/*
 export default function Recipes() {
   const [recipes, setRecipes] = useState("");
 
@@ -60,7 +92,9 @@ export default function Recipes() {
     </div>
   );
 }
+*/
 
+//Full Recipe from API
 /*
               <div className="recipe" key={index}>
                 <h3>Recipe #{index + 1}</h3>

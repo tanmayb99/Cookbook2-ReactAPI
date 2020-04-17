@@ -1,4 +1,4 @@
-const myRecipes = [
+export const myRecipes = [
   {
     index: 1,
     recipeName: "CUCUMBER YOGURT SALAD (TZATZIKI)",
