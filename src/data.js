@@ -1,7 +1,7 @@
 export const myRecipes = [
   {
     index: 1,
-    recipeName: "CUCUMBER YOGURT SALAD (TZATZIKI)",
+    recipeName: "Cucumber Yogurt Salad (Tzatziki)",
     recipeDescription:
       "“Cucumber yogurt tzatziki, a simple salad of peeled, sliced cucumbers, yogurt, dill, and salt and pepper. To accompany spicy dishes.",
     recipeImage: "https://i.ytimg.com/vi/bKEwOmuBOYs/maxresdefault.jpg",
@@ -15,7 +15,7 @@ export const myRecipes = [
   },
   {
     index: 2,
-    recipeName: "ADDICTIVE SESAME CHICKENT",
+    recipeName: "Addictive Seasame Chicken",
     recipeDescription:
       "Just like Momma Wu used to make.  My family begs for this delicious yummy chicken dish.",
     recipeImage:
@@ -30,7 +30,7 @@ export const myRecipes = [
   },
   {
     index: 3,
-    recipeName: "CHOCOHOLIC CHIP COOKIES",
+    recipeName: "Chocoholic Chip Cookies",
     recipeDescription:
       "I go to CA for this, not AA.  Crispy on the outside, chewy on the inside.",
     recipeImage:
@@ -45,7 +45,7 @@ export const myRecipes = [
   },
   {
     index: 4,
-    recipeName: "COVID19 DIET MEAL",
+    recipeName: "COVID19 Diet Meal",
     recipeDescription:
       "Bread and Water, fast and simple ingredients. Life is like prison when in COVID, so eat like a prisoner",
     recipeImage:

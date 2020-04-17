@@ -9,6 +9,7 @@ export default function Recipes() {
     <div>
       <div>
         <button
+          className="btn btn-primary"
           onClick={() => {
             setRecipes(myRecipes);
           }}
@@ -16,13 +17,42 @@ export default function Recipes() {
           Click me
         </button>
       </div>
-      <div>
+
+      <div className="cards-wrapper">
         {recipes &&
           recipes.map((recipe, index) => {
             return (
-              <div>
-                {recipe.index}
-                {recipe.recipeName}
+              <div className="card">
+                <div align="center">
+                  <img
+                    className="card-img-top"
+                    src={recipe.recipeImage}
+                    alt="mealPhoto"
+                  />
+                </div>
+                <div className="card-body">
+                  <h6>Recipe #{index + 1}</h6>
+                  <h5 className="card-title">{recipe.recipeName}</h5>
+                  <p className="card-text">
+                    <ul>
+                      {/*
+                      <li>
+                        <u>Description</u>: {recipe.recipeDescription}
+                      </li>
+                      */}
+                      <li>
+                        <u>Source</u>: {recipe.recipeSource}
+                      </li>
+                      <li>
+                        <u>Serving</u>: {recipe.recipeServings}
+                      </li>
+                      <li>
+                        <u>Preparation Time</u>: {recipe.recipeTotalMins}
+                      </li>
+                    </ul>
+                  </p>
+                  <button className="btn btn-primary">Read More</button>
+                </div>
               </div>
             );
           })}
@@ -61,7 +91,7 @@ export default function Recipes() {
                   src={recipe.strMealThumb}
                   alt="mealPhoto"
                 />
-                <div claclassNamess="card-body">
+                <div className="card-body">
                   <h4>Recipe #{index + 1}</h4>
                   <h5 className="card-title">{recipe.strMeal}</h5>
                   <p className="card-text">

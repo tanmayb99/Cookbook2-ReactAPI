@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Recipes from "./Components/Recipes";
 import Container from "./Components/Container";
 import "./styles.css";
 

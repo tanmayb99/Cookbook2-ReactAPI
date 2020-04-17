@@ -3,29 +3,6 @@
   text-align: center;
 }
 
-/*
-.card {
-  width: 18rem;
-  border-radius: 10%;
-  padding: 10px;
-}
-*/
-
-/*
-.card ul {
-  text-align: left;
-}
-*/
-
-/*
-.card img {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-*/
-
-/*
 .cards-wrapper {
   text-align: center;
   display: flex;
@@ -33,18 +10,37 @@
   justify-content: space-evenly;
   margin: 20px;
   padding: 30px;
-  background-color: #b4bdca;
 }
-*/
+
+.card {
+  width: 20rem;
+  height: 32rem;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.card ul {
+  text-align: left;
+}
+
+.card img {
+  width: 80%;
+  border-radius: 30%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 
 .block {
-  border: 1px solid black;
-  padding: 30px;
+  border: 1px hidden black;
+  padding: 10px;
+  margin: 10px;
 }
 
 .container {
   background-image: url("/public/media/background");
-  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 1px hidden black;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -91,6 +87,7 @@ main {
   height: 100%;
 }
 
+/*
 main > div {
   margin: auto;
   max-width: 600px;
@@ -110,6 +107,7 @@ main small {
   font-weight: 300;
   color: #888;
 }
+*/
 
 #nav-container {
   position: fixed;
@@ -344,25 +342,5 @@ img {
   margin-top: 5px;
   margin-bottom: 30px;
   font-size: 1.5rem;
-}
-*/
-
-/*
-.fetch-button {
-}
-*/
-
-/*
-.recipes {
-}
-*/
-
-/*
-.recipe {
-}
-*/
-
-/*
-.details {
 }
 */

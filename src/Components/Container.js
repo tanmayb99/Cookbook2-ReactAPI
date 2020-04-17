@@ -48,6 +48,7 @@ export default function Container() {
                     {" "}
                     Click the button to have a look on your favorite recipes{" "}
                   </h3>
+                  <br />
                   <Recipes />
                 </div>
               </Route>
@@ -59,21 +60,6 @@ export default function Container() {
               </Route>
             </Switch>
           </div>
-          {/*
-          <div className="content">
-            <h2>
-              Off-screen navigation using <span>:focus-within</span>
-            </h2>
-            <p>
-              Adding yet another pure CSS technique to the list of off-screen
-              navigation by "hacking" the :focus-within pseudo-class. Have a
-              look at the code to see how it works.
-            </p>
-            <small>
-              <strong>NB!</strong> Use a browser that supports :focus-within
-            </small>
-          </div>
-          */}
         </main>
       </div>
     </div>
