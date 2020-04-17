@@ -13,7 +13,7 @@ export default function Recipes() {
             setRecipes(myRecipes);
           }}
         >
-          Click Me
+          Click me
         </button>
       </div>
       <div>

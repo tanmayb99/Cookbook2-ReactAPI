@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Recipes from "./Components/Recipes";
+import Container from "./Components/Container";
 import "./styles.css";
 
 export default function App() {
@@ -21,9 +22,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1> Click the button to have a look on your favorite recipes </h1>
-      <Recipes />
-
+      <Container />
       {/* <h2> Fetch a list of an API and display it </h2> */}
       {/*
       <div className="fetch-button">
