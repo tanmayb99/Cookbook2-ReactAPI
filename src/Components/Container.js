@@ -1,11 +1,11 @@
 import React from "react";
+import { Link, Switch, Route } from "react-router-dom";
 import Recipes from "./Recipes";
 import "../styles.css";
 
 export default function Container() {
   return (
     <div>
-      hello
       <div className="page">
         <header tabIndex="0">Your Cookbook</header>
         <div id="nav-container">
@@ -18,16 +18,16 @@ export default function Container() {
           <div id="nav-content" tabIndex="0">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <Link to="/home">Home</Link>
               </li>
               <li>
-                <a href="#">Recipes</a>
+                <Link to="/recipes">Recipes</Link>
               </li>
               <li>
-                <a href="#">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li className="small">
                 <a href="#0">Facebook</a>
@@ -37,14 +37,27 @@ export default function Container() {
           </div>
         </div>
         <main>
-          <div>
-            <div className="container">
-              <h3>
-                {" "}
-                Click the button to have a look on your favorite recipes{" "}
-              </h3>
-              <Recipes />
-            </div>
+          <div className="block">
+            <Switch>
+              <Route path="/home">
+                Here will be displayed Home page content
+              </Route>
+              <Route path="/recipes">
+                <div className="container">
+                  <h3>
+                    {" "}
+                    Click the button to have a look on your favorite recipes{" "}
+                  </h3>
+                  <Recipes />
+                </div>
+              </Route>
+              <Route path="/about">
+                Here will be displayed About page content
+              </Route>
+              <Route path="/contact">
+                Here will be displayed Contact page content
+              </Route>
+            </Switch>
           </div>
           {/*
           <div className="content">
