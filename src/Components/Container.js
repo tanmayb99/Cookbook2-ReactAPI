@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, Switch, Route } from "react-router-dom";
 import Recipes from "./Recipes";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
 import "../styles.css";
 
 export default function Container() {
@@ -40,7 +43,7 @@ export default function Container() {
           <div className="block">
             <Switch>
               <Route path="/home">
-                Here will be displayed Home page content
+                <Home />
               </Route>
               <Route path="/recipes">
                 <div className="container">
@@ -53,10 +56,10 @@ export default function Container() {
                 </div>
               </Route>
               <Route path="/about">
-                Here will be displayed About page content
+                <About />
               </Route>
               <Route path="/contact">
-                Here will be displayed Contact page content
+                <Contact />
               </Route>
             </Switch>
           </div>
